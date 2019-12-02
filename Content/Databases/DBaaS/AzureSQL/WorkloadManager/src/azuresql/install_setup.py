@@ -21,9 +21,9 @@ cmd = sys.argv[1]
 
 # Install Python Packages
 try:
-    from pip import main 
+    from pip import main
 except ImportError as err:
-    from pip._internal import main
+    from pip._internal.main import main
 
 def install_packages():
     global pip_sources
